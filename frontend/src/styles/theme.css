@@ -1,0 +1,15 @@
+:root {
+  --primary: #2c7be5;
+  --secondary: #6f42c1;
+  --success: #28a745;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --bg: #ffffff;
+  --card-bg: #ffffff;
+  --text-dark: #212529;
+  --text-light: #6c757d;
+}
+
+body {
+  background-color: var(--bg);
+}

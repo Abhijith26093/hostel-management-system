@@ -1,0 +1,43 @@
+.page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Priority colors */
+.priority-low { border-left: 6px solid var(--success); }
+.priority-medium { border-left: 6px solid var(--warning); }
+.priority-high { border-left: 6px solid #fd7e14; }
+.priority-emergency { border-left: 6px solid var(--danger); }
+
+/* Announcement cards */
+.announcement-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.announcement-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+}
+
+.announcement-general::before { background: var(--primary); }
+.announcement-cleaning::before { background: var(--success); }
+.announcement-water::before { background: #17a2b8; }
+.announcement-electricity::before { background: var(--warning); }
